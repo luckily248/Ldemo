@@ -1,5 +1,7 @@
 package com.luke.liangzhiying.userlib;
 
+
+//Relation table indicate many to many relation between WebPage and Permissions
 public class WebPage_Permissions {
     private Integer permissions;
     private Integer webPage;

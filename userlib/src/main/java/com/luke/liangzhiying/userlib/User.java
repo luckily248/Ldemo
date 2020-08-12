@@ -1,5 +1,7 @@
 package com.luke.liangzhiying.userlib;
 
+
+//one role can be assign to multiple users
 public class User {
     private Integer id;
     private String name;

@@ -3,14 +3,16 @@ package com.luke.liangzhiying.userlib;
 import java.util.ArrayList;
 
 //memory layer implementation
+//for remote service need to use retrofit or http libraries
+//for local storage need to use file or SQLite libraries
 public class RBAC implements IRBAC{
     private static RBAC INSTANCE = null;
     private RBAC() {};
-    private ArrayList<User> users = new ArrayList<>();
-    private ArrayList<Role> roles = new ArrayList<>();
-    private ArrayList<WebPage_Permissions> wplist = new ArrayList<>();
-    private ArrayList<WebPage> webPages = new ArrayList<>();
-    private ArrayList<Permissions> permissionslist = new ArrayList<>();
+    private ArrayList<User> users = new ArrayList<>(); //USER TABLE
+    private ArrayList<Role> roles = new ArrayList<>(); //ROLE TABLE
+    private ArrayList<WebPage_Permissions> wplist = new ArrayList<>(); //RELATION TABLE
+    private ArrayList<WebPage> webPages = new ArrayList<>();//WEBPAGE TABLE
+    private ArrayList<Permissions> permissionslist = new ArrayList<>();// PERMISSIONS TABLE
 
 
     public static RBAC getInstance() {

@@ -1,5 +1,7 @@
 package com.luke.liangzhiying.userlib;
 
+
+//one role assign by many permission with link to webpage
 public class Permissions {
     private Integer id;
     private Integer roleId;

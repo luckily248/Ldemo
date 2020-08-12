@@ -1,5 +1,7 @@
 package com.luke.liangzhiying.userlib;
 
+
+//interface for all functions
 interface IRBAC {
     User addUser(String username);
     void removeUser(Integer userId);
