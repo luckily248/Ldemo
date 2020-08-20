@@ -15,6 +15,7 @@ public class RBAC implements IRBAC{
     private ArrayList<Permissions> permissionslist = new ArrayList<>();// PERMISSIONS TABLE
 
 
+
     public static RBAC getInstance() {
         if (INSTANCE == null) {
             INSTANCE = new RBAC();
